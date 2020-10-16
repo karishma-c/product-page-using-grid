@@ -660,6 +660,9 @@ body {
     .muted-text {
         margin: 20px 0 0 0;
     }
+    #img-1 {
+        margin: 50px 0 0 0;
+    }
     .item-3
     {
         grid-row-start: 3;
@@ -702,14 +705,15 @@ body {
         height:324px;
     }
     .imac-content {
-        max-width: 400px;
+        max-width: 360px;
     }
     #imac-img {
         margin: 20px auto;
         width:500px;
     }
     .small-para {
-        width: 50%;
+        width: 60%;
+        text-align: left;
     }
     .para-text {
         margin: 0 auto;
@@ -742,7 +746,7 @@ body {
         width: 350px;
         position: relative;
         left: -40px;
-        top: 32px;
+        top: 23px;
     }
     .item-5
     {
@@ -756,6 +760,7 @@ body {
     .meet-img {
         height: 320px;
         width: 320px;
+        margin: 10px 0 0 0;
     }
     .item-9
     {
@@ -801,7 +806,7 @@ body {
     .image {
         position: relative;
         width: 250px;
-        top: 20px;
+        top: 8px;
     }
     .instruction {
         font-size: 45px;
@@ -815,6 +820,6 @@ body {
         width: 350px;
         position: relative;
         left: -60px;
-        top: 52px;
+        top: 30px;
     }
 }
