@@ -14,7 +14,10 @@ body {
 }
 .item-1
 {
-    grid-area:1/1/2/3;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
     display: flex;
     flex-flow: row wrap;
     align-items:center;
@@ -62,7 +65,10 @@ body {
 }
 .item-2
 {
-    grid-area:1/3/2/5;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +105,10 @@ body {
 }
 .item-3
 {
-    grid-area:2/1/3/2;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +141,10 @@ body {
 }
 .item-4
 {
-    grid-area:2/2/3/4;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 4;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -203,7 +215,10 @@ body {
 }
 .item-5
 {
-    grid-area:2/4/4/5;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,8 +284,8 @@ body {
     line-height: 1.5;
     text-align: center;
     margin: 10px auto;
-    max-width: 250px;
     color: white;
+    width:75%;
 }
 .learnmore-btn {
     font-family: var(--font-family-2);
@@ -287,7 +302,10 @@ body {
 }
 .item-6
 {
-    grid-area:3/1/4/2;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,7 +337,10 @@ body {
 }
 .item-7
 {
-    grid-area:3/2/4/4;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,7 +377,10 @@ body {
 }
 .item-8
 {
-    grid-area:4/1/5/2;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -392,7 +416,10 @@ body {
 }
 .item-9
 {
-    grid-area:4/2/5/3;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,12 +442,14 @@ body {
     color: #333333;
     text-align: center;
     margin: 10px auto;
-    max-width: 300px;
     line-height: 1.5;
 }
 .item-10
 {
-    grid-area:4/3/5/5;
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 5;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -489,12 +518,12 @@ body {
     }
 }
 
-@media(max-width:900px) {
+@media (max-width:991px)
+{
 
     .card-container {
-        display: grid;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.2fr 0.3fr;
-    }
+        grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto;
+      }
     .item-2
     {
         grid-row-start: 1;
@@ -585,7 +614,7 @@ body {
         width: 380px;
         position: relative;
         left: -40px;
-        top: 48px;
+        top: 0;
     }
     .item-9
     {
@@ -622,11 +651,12 @@ body {
     }
     
 }
-@media(max-width:700px) {
+
+ @media (max-width:479px)
+ {
 
     .card-container {
-        display: grid;
-        grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 1fr 0.2fr 0.3fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     }
     .item-2
     {
@@ -708,16 +738,14 @@ body {
         max-width: 360px;
     }
     #imac-img {
-        margin: 20px auto;
+        margin: 5px 0 0 0;
         width:500px;
     }
     .small-para {
-        width: 60%;
+        width: 80%;
         text-align: left;
     }
-    .para-text {
-        margin: 0 auto;
-    }
+    
     .download {
         margin: 10px 0 20px 0;
     }
@@ -746,7 +774,7 @@ body {
         width: 350px;
         position: relative;
         left: -40px;
-        top: 23px;
+        top: 0;
     }
     .item-5
     {
@@ -769,6 +797,9 @@ body {
         grid-row-end: 10;
         grid-column-end: 5;
         
+    }
+    .advantage {
+        width: 70%;
     }
     .item-10
     {
@@ -799,27 +830,6 @@ body {
         max-width: 400px;
         color: white;
     }
+
 }
 
-@media(max-width:320px) {
-
-    .image {
-        position: relative;
-        width: 250px;
-        top: 8px;
-    }
-    .instruction {
-        font-size: 45px;
-        max-width: 300px;
-    }
-    .imac-content {
-        max-width: 280px;
-    }
-    .lap-img {
-        margin: 0;
-        width: 350px;
-        position: relative;
-        left: -60px;
-        top: 30px;
-    }
-}
